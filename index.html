@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TROVEA · pubs animées pour petites marques</title>
+<meta name="description" content="Pubs animées de 12 à 15 secondes pour petites marques, au format vertical (stories, Reels, TikTok). La vidéo de démonstration de cette page est réalisée avec l’aide d’une intelligence artificielle.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TROVEA · pubs animées pour petites marques">
+<meta property="og:description" content="Pubs animées de 12 à 15 secondes pour petites marques. Réalisées avec l’aide d’une IA.">
+<meta property="og:image" content="https://gabrielmetais22-ship-it.github.io/trovea/posters/noel-demo.jpg">
+<meta name="theme-color" content="#1F4E4A">
+<link rel="icon" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+@font-face{font-family:"Inter";src:url(fonts/Inter-latin-wght.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url(fonts/InstrumentSerif-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --fond:#F3EDE0; --fond2:#EAE1CF; --encre:#1B2B29; --vert:#1F4E4A; --terre:#B5603F; --terre-vif:#D48B6A;
+  --doux:#5B6B67; --trait:#D9CFBB; --carte:#FBF8F1; --ia-fond:#E3EBE4;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --fond:#0F1C1A; --fond2:#142624; --encre:#EDE6D6; --vert:#9CC9C2; --terre:#E39A78; --terre-vif:#D48B6A;
+    --doux:#A3B2AD; --trait:#2A3F3C; --carte:#162926; --ia-fond:#18302D;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fond);color:var(--encre);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+a{color:var(--vert)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;color:var(--vert);letter-spacing:-.01em}
+h1{font-size:clamp(40px,8vw,68px)}
+h2{font-size:clamp(30px,5vw,42px)}
+p{margin:0 0 1em}
+
+header{padding:28px 0 0}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--vert)}
+.marque img{width:44px;height:44px;border-radius:50%;display:block}
+.marque span{font:600 15px/1 var(--sans);letter-spacing:.22em}
+
+.hero{padding:36px 0 36px;display:grid;gap:26px;align-items:start;grid-template-areas:"texte" "demo" "ia"}
+.hero .texte{grid-area:texte}
+.hero .demo{grid-area:demo}
+.hero .ia{grid-area:ia;margin-top:0}
+.hero .lead{font-size:19px;max-width:34em;color:var(--doux)}
+.hero h1{margin-bottom:18px}
+.ia{display:flex;gap:14px;align-items:flex-start;background:var(--ia-fond);border:1px solid var(--trait);border-radius:14px;padding:16px 18px;margin-top:26px;font-size:15.5px;line-height:1.55}
+.ia b{color:var(--vert)}
+.ia .pastille{flex:none;margin-top:2px;width:26px;height:26px;border-radius:50%;background:var(--vert);color:var(--fond);display:grid;place-items:center;font:600 13px/1 var(--sans)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ia .pastille{color:#0F1C1A}}
+
+figure{margin:0}
+.video{position:relative;border-radius:18px;overflow:hidden;background:#000;aspect-ratio:9/16;box-shadow:0 18px 40px -18px rgba(20,40,36,.45)}
+.video video{display:block;width:100%;height:100%;object-fit:cover;background:#000}
+figcaption{font-size:14px;line-height:1.5;color:var(--doux);margin-top:10px}
+figcaption strong{color:var(--encre);font-weight:600}
+
+.hero .demo{max-width:340px;width:100%;justify-self:center}
+@media (min-width:860px){
+  .hero{grid-template-columns:1.15fr .85fr;grid-template-rows:1fr 1fr;gap:0 64px;grid-template-areas:"texte demo" "ia demo"}
+  .hero .texte{align-self:end;padding-bottom:12px}
+  .hero .ia{align-self:start;margin-top:12px}
+  .hero .demo{align-self:center}
+  .hero .demo{justify-self:end}
+}
+
+section{padding:52px 0;border-top:1px solid var(--trait)}
+section .intro{max-width:40em;color:var(--doux);margin-top:14px}
+
+
+
+.bouton{display:inline-block;background:var(--vert);color:var(--fond);text-decoration:none;font-weight:600;border-radius:99px;padding:14px 24px;margin-top:8px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bouton{color:#0F1C1A}}
+
+footer{padding:34px 0 60px;font-size:13px;line-height:1.6;color:var(--doux);border-top:1px solid var(--trait)}
+footer p{max-width:62em}
+footer h3{font:600 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--encre);margin:22px 0 8px}
+:focus-visible{outline:3px solid var(--terre-vif);outline-offset:3px;border-radius:4px}
+.etapes{counter-reset:e;list-style:none;padding:0;margin:26px 0 0;display:grid;gap:16px;max-width:40em}
+.etapes li{counter-increment:e;padding-left:46px;position:relative}
+.etapes li::before{content:counter(e);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--vert);color:var(--fond);display:grid;place-items:center;font:600 14px/1 var(--sans)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .etapes li::before{color:#0F1C1A}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="marque" href="./" aria-label="TROVEA, accueil">
+      <img src="img/logo-192.png" alt="" width="44" height="44">
+      <span>TROVEA</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="texte">
+      <h1>Des pubs animées pour les petites marques.</h1>
+      <p class="lead">Je suis Gabriel. Je fais des pubs de douze à quinze secondes, au format vertical des stories, des Reels et de TikTok : vos couleurs, votre vrai produit à l’écran.</p>
+    </div>
+
+    <figure class="demo">
+      <div class="video">
+        <video controls playsinline preload="metadata" poster="posters/noel-demo.jpg" aria-label="Pub de Noël de démonstration pour une marque fictive, Maison Brumaline">
+          <source src="videos/noel-demo.mp4" type="video/mp4">
+          Votre navigateur ne lit pas cette vidéo.
+        </video>
+      </div>
+      <figcaption><strong>La pub de Noël, 12,6 secondes.</strong> Marque, produit et photo inventés : Maison Brumaline n’existe pas. Touchez la vidéo pour la lancer, avec le son.</figcaption>
+    </figure>
+
+    <div class="ia" role="note">
+      <div class="pastille" aria-hidden="true">IA</div>
+      <div><b>Réalisée avec une IA</b>, sous ma direction : je choisis, je corrige et je valide chaque pub. Rien n’est filmé ; l’animation et la photo de cette démo sont dessinées par du code. Pour une vraie marque, c’est sa propre photo qui sort du paquet.</div>
+    </div>
+  </div>
+
+  <section id="noel">
+    <h2>Faite pour votre marque</h2>
+    <p class="intro">Votre photo produit, vos couleurs, votre police, une phrase de votre site et votre adresse en bouton à la fin. Je n’utilise votre photo que pour cette vidéo et je la supprime si vous préférez.</p>
+    <ol class="etapes">
+      <li><b>Je prépare une pub avec votre photo</b>, gratuite et sans engagement.</li>
+      <li><b>Vous me dites ce qui ne va pas</b> : je corrige sous 24 heures.</li>
+      <li><b>Si elle vous plaît</b>, je vous envoie la version en haute qualité, prête à publier.</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2>Une question, un changement ?</h2>
+    <p class="intro">Répondez au mail que je vous ai envoyé, ou écrivez-moi directement.</p>
+    <a class="bouton" href="mailto:trovea05@gmail.com?subject=Pub%20de%20No%C3%ABl">Écrire à Gabriel</a>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>Démonstration</h3>
+    <p>La marque, le produit et la photo de la démonstration sont inventés ; toute ressemblance avec une marque existante serait fortuite.</p>
+
+    <h3>Musique</h3>
+    <p>« Snow Dance - Electro Beat - 105bpm », plusch, via Pixabay (<a href="https://pixabay.com/music/funk-snow-dance-electro-beat-105bpm-495461/" rel="noopener">pixabay.com</a>), licence Pixabay Content License ; tempo ramené à 100 BPM pour caler les images.</p>
+
+    <h3>Mentions légales</h3>
+    <p>Éditeur : [À COMPLÉTER : prénom et NOM de la titulaire], entrepreneur individuel, nom commercial TROVEA, SIRET [À COMPLÉTER], [À COMPLÉTER : adresse], téléphone [À COMPLÉTER], e-mail : trovea05@gmail.com. Directeur de la publication : [À COMPLÉTER : prénom et NOM]. Hébergeur : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis (github.com).</p>
+
+    <h3>Données personnelles</h3>
+    <p>Cette page n’utilise ni cookie, ni outil de mesure d’audience, ni police ou script externe. GitHub, hébergeur américain, peut enregistrer l’adresse IP des visiteurs. Les e-mails reçus servent uniquement à répondre.</p>
+  </div>
+</footer>
+
+</body>
+</html>
